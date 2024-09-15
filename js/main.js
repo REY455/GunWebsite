@@ -175,7 +175,23 @@ $(document).ready(function(){
             });
         });
 
-
+      //   (function() {
+      //     // URL of the home page
+      //     const homePageUrl = './../index.html';
+      
+      //     // Add an initial entry to the history stack
+      //     if (window.history && window.history.pushState) {
+      //         // Push the home page URL onto the stack
+      //         window.history.pushState({ page: homePageUrl }, null, homePageUrl);
+      
+      //         // Handle back navigation
+      //         window.onpopstate = function() {
+      //             // Redirect to the home page
+      //             window.location.href = homePageUrl;
+      //         };
+      //     }
+      // })();
+      
 
 
     $(document).ready(function() {

@@ -464,6 +464,28 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="./../js/gmaps.min.js"></script>
 	<script src="./../js/main.js"></script>
+
+<script>
+    (function setupRedirectOnBack() {
+        // Check if history and pushState are supported
+        if (window.history && window.history.pushState) {
+            // Push a new state with a unique URL to prevent navigating back
+            window.history.pushState({ page: 1 }, '', window.location.href);
+
+            // Handle the popstate event to redirect to the index page
+            window.onpopstate = function() {
+                window.location.href = '/index.html'; // Adjust the path if necessary
+            };
+
+            // Optional: Push another state to handle forward navigation
+            // This step is generally not required unless you have a specific use case
+            // window.history.pushState({ page: 2 }, '', window.location.href);
+        }
+    })();
+</script>
+
+
+
 </body>
 
 </html>

@@ -46,3 +46,9 @@ transition: opacity ease 250ms;
     opacity: 1;
 
 }
+
+@media (max-width:700px){
+    .slider-wrapper{
+        max-width:100%;
+    }
+}
