@@ -11,7 +11,7 @@
     max-width: 100%;  
   background-color: #fff;
   display: flex;
-  border-radius: 1rem;
+margin-top: 5rem;
   flex-wrap: wrap;
   }
 
@@ -28,14 +28,12 @@ margin: 30px auto;
     
 }
 .right{
-    
-    /* margin-left: 650px;
-    right: 70%; */
-
+    margin-left: 280px;
 }
 .big-img{
     margin-top: 5rem;
-    width: 370px;
+    width: 125%;
+    align-items: center;
 }
 .big-img img{
     width: inherit;
@@ -223,3 +221,8 @@ margin: 30px auto;
     color: #f4f4f4
    }
   
+   @media (max-width:720px){
+    .container-body{
+        margin-top: 1rem;
+    }
+   }

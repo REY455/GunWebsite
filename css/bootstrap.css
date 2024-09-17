@@ -4543,7 +4543,7 @@ input[type=submit].btn-block {
    
 }
 .navbar-toggler{
-    background-color: #726969;
+    background-image: url();
    border-color: rgb(0, 0, 0);
     cursor: pointer;
 }
